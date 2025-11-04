@@ -1,9 +1,9 @@
 function isNationalIDValid(name, age, zip, password) {
 	if (
 		name !== "" &&
-		18 >=  age  &&
+		age >= 18  &&
 		age <= 65 &&
-		0 <=  zip  &&
+		zip >= 0 &&
 		zip <= 99999 &&
 		password !== "azerty" &&
 		password !== "qwerty" &&
