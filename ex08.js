@@ -5,9 +5,9 @@ function isNationalIDValid(name, age, zip, password) {
 		age <= 65 &&
 		0 <=  zip  &&
 		zip <= 99999 &&
-		password != "azerty" &&
-		password != "qwerty" &&
-		password != "1234"
+		password !== "azerty" &&
+		password !== "qwerty" &&
+		password !== "1234"
 	) {
 		return true;
 	} else {
